@@ -11,12 +11,21 @@
   "license": "MIT",
   "dependencies": {
     "cookie-session": "^1.4.0",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "forge-apis": "^0.9.4"
+    "forge-apis": "^0.9.5"
   },
   "devDependencies": {
     "@types/forge-viewer": "^7.69.5"
   },
   "main": "config.js",
-  "author": ""
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wonBIM/BIM-hub-platform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wonBIM/BIM-hub-platform/issues"
+  },
+  "homepage": "https://github.com/wonBIM/BIM-hub-platform#readme"
 }
