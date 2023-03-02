@@ -4,6 +4,11 @@ import "./extensions/SummaryExtension.js";
 import "./extensions/HistogramExtension.js";
 import "./extensions/DataGridExtension.js";
 import "./extensions/EventsTutorial.js";
+import "./extensions/ToolbarExtension.js";
+import "./extensions/addgeom.js";
+//import * as THREE from "https://unpkg.com/three@0.126.1/build/three.module.js";
+//import * as THREE from "three";
+//const scene = new THREE.Scene();
 
 async function getAccessToken(callback) {
   try {
@@ -27,6 +32,8 @@ export function initViewer(container) {
           "HistogramExtension",
           "DataGridExtension",
           "EventsTutorial",
+          "ToolbarExtension",
+          "AddgeomExtension",
         ],
       };
       const viewer = new Autodesk.Viewing.GuiViewer3D(container, config);

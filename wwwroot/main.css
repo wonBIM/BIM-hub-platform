@@ -108,3 +108,10 @@ html {
 .my-custom-ui span {
   color: red;
 }
+
+.show-env-bg-button {
+  background: red;
+}
+.hide-env-bg-button {
+  background: blue;
+}
