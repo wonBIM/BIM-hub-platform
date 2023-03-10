@@ -115,3 +115,10 @@ html {
 .hide-env-bg-button {
   background: blue;
 }
+
+.Hello-button {
+  background-image: url("https://img.icons8.com/material/24/null/hello.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}

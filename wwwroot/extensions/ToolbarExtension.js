@@ -1,4 +1,4 @@
-// 배경화면 켜고 끄는 확장탭 만들기
+// 배경화면 켜고 끄는 확장탭 만들기 클래스 말고 함수형태로 -> function ToolbarExtension
 function ToolbarExtension(viewer, options) {
   Autodesk.Viewing.Extension.call(this, viewer, options);
 }

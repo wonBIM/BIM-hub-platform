@@ -7,6 +7,7 @@ import "./extensions/EventsTutorial.js";
 import "./extensions/ToolbarExtension.js";
 import "./extensions/addgeom.js";
 import "./extensions/Profile.js"; // 설정 커스텀 세팅
+import "./extensions/HelloWorld.js"; // HelloWorld
 //import "./extensions/PropertyDB.js";  //튜토리얼 속성 데이터베이스 쿼리(매스속성) - 로딩 안됨
 //import "./extensions/SceneBuilderext.js"; // 잘 안됨
 
@@ -35,6 +36,11 @@ export function initViewer(container) {
           "ToolbarExtension",
           "AddgeomExtension",
           "Profile",
+          "Autodesk.VisualClusters", //기본 내장 라이브러리(재료별 펼쳐주는 기능)
+          "Autodesk.DocumentBrowser", //기본 내장 라이브러리
+          "HelloWorld",
+          //"Autodesk.Snapping", //기본 내장 라이브러리
+          //"Autodesk.SplitScreen", //기본 내장 라이브러리
           //"userFunction",
           //"SceneBuilder",
         ],
