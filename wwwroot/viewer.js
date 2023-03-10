@@ -6,9 +6,9 @@ import "./extensions/DataGridExtension.js";
 import "./extensions/EventsTutorial.js";
 import "./extensions/ToolbarExtension.js";
 import "./extensions/addgeom.js";
-//import * as THREE from "https://unpkg.com/three@0.126.1/build/three.module.js";
-//import * as THREE from "three";
-//const scene = new THREE.Scene();
+import "./extensions/Profile.js"; // 설정 커스텀 세팅
+//import "./extensions/PropertyDB.js";  //튜토리얼 속성 데이터베이스 쿼리(매스속성) - 로딩 안됨
+//import "./extensions/SceneBuilderext.js"; // 잘 안됨
 
 async function getAccessToken(callback) {
   try {
@@ -34,8 +34,12 @@ export function initViewer(container) {
           "EventsTutorial",
           "ToolbarExtension",
           "AddgeomExtension",
+          "Profile",
+          //"userFunction",
+          //"SceneBuilder",
         ],
       };
+
       const viewer = new Autodesk.Viewing.GuiViewer3D(container, config);
       viewer.start();
       viewer.setTheme("light-theme");
