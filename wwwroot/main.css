@@ -116,8 +116,15 @@ html {
   background: blue;
 }
 
-.Hello-button {
+.Hello-buttonIcon {
   background-image: url("https://img.icons8.com/material/24/null/hello.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.handleselectionextensionIcon {
+  background-image: url("https://img.icons8.com/glyph-neue/64/null/invisible.png");
   background-size: 24px;
   background-repeat: no-repeat;
   background-position: center;
