@@ -1,10 +1,10 @@
-import { BaseExtension } from "./BaseExtension.js";
+//import { BaseExtension } from "./BaseExtension.js";
 
-class HandleSelectionExtension extends BaseExtension {
-  //class HandleSelectionExtension extends Autodesk.Viewing.Extension {
+//class HandleSelectionExtension extends BaseExtension {
+class HandleSelectionExtension extends Autodesk.Viewing.Extension {
   constructor(viewer, options) {
     super(viewer, options);
-    this.viewer = viewer;
+    //this.viewer = viewer;
     this.button1 = null;
     this.subToolbar = null;
   }
@@ -24,7 +24,6 @@ class HandleSelectionExtension extends BaseExtension {
 
   // HelloWorldjs 에서 만든 버튼 그룹에 추가
   onToolbarCreated() {
-    //this viewer = viewer;
     // SubToolbar
     this.subToolbar = this.viewer.toolbar.getControl("my-Hello-toolbar");
     if (!this.subToolbar) {
@@ -38,14 +37,14 @@ class HandleSelectionExtension extends BaseExtension {
       "handleselectionextensionButton"
     );
 
-    // 테스트 1 : 선택한 객체 isolated 함수 만들기----------------------------------------------------------------
+    // 테스트 1 : 선택한 객체 isolated 함수 만들기(익명함수로 하니깐 해결됨)  () =>  ------------------
     this.button1.onClick = () => {
       const dbids = this.viewer.getSelection();
       this.viewer.isolate(dbids);
     };
-    // ----------------------------------------------------------------------------------------------------------
+    // --------------------------------------------------------------------------------------------
 
-    // //테스트 2 : 버튼 클릭하면 실행되는 함수
+    // //ALT 2 : 버튼 클릭하면 대화창 뜨고 --> 오케이 confirm 하면 실행되는 함수
     // button1.onClick = () => {
     //   // alert("(주)삼우씨엠건축사사무소"); //기입한 내용 출력 테스트용 함수---------------------
 
